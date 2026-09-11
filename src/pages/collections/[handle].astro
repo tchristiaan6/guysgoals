@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { collections, collectionProducts } from '../../lib/data';
+export function getStaticPaths() { return [{ params: { handle: 'all' } }, ...Object.keys(collections).map(h => ({ params: { handle: h } }))]; }
+const { handle } = Astro.params;
+const col = handle === 'all' ? { title: 'All Supplements', description: "Every supplement Guys Goals sold: pre- and post-workout, daily health, focus and vitality." } : collections[handle!];
+const items = collectionProducts(handle!);
+---
+<Base title={col.title} description={col.description || `${col.title} from Guys Goals.`}>
+<section class="section"><div class="container">
+  <p class="kicker">Collection</p><h1>{col.title}</h1>
+  {col.description && <p style="max-width:640px;color:var(--muted)">{col.description}</p>}
+  <div class="grid grid--4" style="margin-top:28px">{items.map((p: any) => <ProductCard p={p} />)}</div>
+</div></section>
+</Base>

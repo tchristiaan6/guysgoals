@@ -1,0 +1,17 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PostCard from '../../../components/PostCard.astro';
+import { posts } from '../../../lib/data';
+export function getStaticPaths() { return posts.map(p => ({ params: { slug: p.slug }, props: { post: p } })); }
+const { post } = Astro.props;
+const more = posts.filter(p => p.slug !== post.slug).slice(0, 3);
+---
+<Base title={post.title} description={post.excerpt} image={post.hero} type="article">
+<article class="section"><div class="container">
+  <div class="post-head"><p class="kicker"><a href="/blogs/mens-health" style="text-decoration:none">Comparisons</a> · {post.date}</p><h1>{post.title}</h1></div>
+  <img class="post-hero" src={post.hero} alt={post.title} width="1248" height="832">
+  <div class="rte post-body" set:html={post.html} />
+</div></article>
+{more.length > 0 && <section class="section section--soft"><div class="container"><h2 style="font-size:24px;margin-bottom:20px">More comparisons</h2><div class="grid grid--3">{more.map((p: any) => <PostCard post={p} />)}</div></div></section>}
+</Base>
+<style>.post-head{max-width:760px;margin:0 auto 28px}.post-hero{max-width:960px;margin:0 auto 40px;border-radius:var(--radius);width:100%;aspect-ratio:3/2;object-fit:cover}.post-body{margin:0 auto}</style>

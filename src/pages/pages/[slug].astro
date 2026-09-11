@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import { pages } from '../../lib/data';
+const map: Record<string, string> = { 'about-us': 'about', 'contact': 'contact', 'data-sharing-opt-out': 'privacy-choices' };
+export function getStaticPaths() { return ['about-us', 'contact', 'data-sharing-opt-out'].map(s => ({ params: { slug: s } })); }
+const page = pages.find(p => p.slug === map[Astro.params.slug!]);
+const isContact = page.slug === 'contact';
+---
+<Base title={page.title}>
+<section class="section"><div class="container"><h1>{page.title}</h1>
+  {isContact ? <div class="rte"><p>Guys Goals closed in 2025, so the contact form is gone. For anything about this archive, reach Tom through <a href="https://tchristiaan.com">tchristiaan.com</a>.</p></div> : <div class="rte" set:html={page.html} />}
+</div></section>
+</Base>

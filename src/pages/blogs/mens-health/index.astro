@@ -1,0 +1,12 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PostCard from '../../../components/PostCard.astro';
+import { posts } from '../../../lib/data';
+---
+<Base title="Comparisons" description="How Guys Goals supplements compared to the big brands on price and ingredients.">
+<section class="section"><div class="container">
+  <p class="kicker">Men's Health</p><h1>See how we compare</h1>
+  <p style="max-width:600px;color:var(--muted)">Side-by-side comparisons of Guys Goals supplements against the big-brand products on Amazon.</p>
+  <div class="grid grid--3" style="margin-top:28px">{posts.map((p: any) => <PostCard post={p} />)}</div>
+</div></section>
+</Base>

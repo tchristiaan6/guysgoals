@@ -1,0 +1,7 @@
+---
+const { post } = Astro.props;
+---
+<a class="card" href={`/blogs/mens-health/${post.slug}`}>
+  <img class="card__img" style="aspect-ratio:3/2" src={post.hero} alt={post.title} loading="lazy" width="900" height="600">
+  <div class="card__body"><p class="card__meta">{post.date}</p><p class="card__title" style="font-size:17px">{post.title}</p></div>
+</a>

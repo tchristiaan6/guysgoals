@@ -1,0 +1,189 @@
+{
+ "hero": {
+  "title": "Elevate Your Performance",
+  "text": "Premium supplements. No bullshit pricing.",
+  "image": "/images/site/hero-f43694.png"
+ },
+ "lists": [
+  {
+   "title": "Men's Workout Supplements",
+   "products": [
+    "focus-powder-sour-gummy-worm",
+    "100-whey-protein-isolate-chocolate",
+    "energy-powder-fruit-punch",
+    "creatine-monohydrate"
+   ]
+  },
+  {
+   "title": "Men's Daily Health Supplements",
+   "products": [
+    "mens-daily-super-greens-and-reds-superfood",
+    "mens-vitality-plus-tablets",
+    "mens-dialy-omega-3-fish-oil-softgels",
+    "complete-multivitamin"
+   ]
+  }
+ ],
+ "comparison": {
+  "title": "See How Our Prices Stack Up",
+  "intro": "Here’s how our pricing compares to typical big-brand supplements you’ll find on Amazon and other major retailers.",
+  "head": [
+   "Product (Category)",
+   "Guys Goals Price",
+   "Avg Big Brand Price",
+   "Estimated Savings",
+   "% Cheaper"
+  ],
+  "rows": [
+   [
+    "Pre-Workout Energy Powder (Fruit Punch)",
+    "$12.99",
+    "~$34.99",
+    "$22.00",
+    "~63% less"
+   ],
+   [
+    "100% Whey Protein Isolate (~2 lb)",
+    "$24.99",
+    "~$34.99",
+    "$10.00",
+    "~29% less"
+   ],
+   [
+    "Daily Greens Superfood Powder",
+    "$12.99",
+    "~$31.99",
+    "$19.00",
+    "~59% less"
+   ],
+   [
+    "Men’s Complete Multivitamin",
+    "$8.99",
+    "~$17.99",
+    "$9.00",
+    "~50% less"
+   ],
+   [
+    "Creatine Monohydrate (250 g)",
+    "$14.99",
+    "~$17.99",
+    "$3.00",
+    "~17% less"
+   ],
+   [
+    "Men’s Daily Omega-3 Softgels",
+    "$10.99",
+    "~$24.99",
+    "$14.00",
+    "~56% less"
+   ],
+   [
+    "Men’s Vitality Tablets",
+    "$9.99",
+    "~$24.99",
+    "$15.00",
+    "~60% less"
+   ]
+  ],
+  "note": "*Average big-brand prices based on current Amazon listings for comparable products; actual prices may vary."
+ },
+ "banners": [
+  {
+   "title": "Pre-Workout",
+   "text": "Simple, clean energy to fuel your gym sessions.",
+   "chips": [
+    {
+     "label": "Pre-Workout Energy Powder",
+     "href": "/products/energy-powder-fruit-punch"
+    }
+   ],
+   "image": "/images/site/pre-workout-c169ae.jpg"
+  },
+  {
+   "title": "Post-Workout",
+   "text": "Creatine and protein to make every workout count.",
+   "chips": [
+    {
+     "label": "Creatine Monohydrate",
+     "href": "/products/creatine-monohydrate"
+    },
+    {
+     "label": "100% Whey Protein Isolate",
+     "href": "/products/100-whey-protein-isolate-chocolate"
+    }
+   ],
+   "image": "/images/site/post-workout-858ee5.jpg"
+  },
+  {
+   "title": "Daily Energy",
+   "text": "Daily greens that don't break the bank.",
+   "chips": [
+    {
+     "label": "Daily Super Greens + Reds Powder",
+     "href": "/products/mens-daily-super-greens-and-reds-superfood"
+    }
+   ],
+   "image": "/images/site/daily-energy-7c0963.jpg"
+  },
+  {
+   "title": "Daily Focus",
+   "text": "When your work requires total concentration.",
+   "chips": [
+    {
+     "label": "Men's Sour Gummy Focus Powder",
+     "href": "/products/focus-powder-sour-gummy-worm"
+    }
+   ],
+   "image": "/images/site/daily-focus-bdf46f.jpg"
+  },
+  {
+   "title": "Daily Support",
+   "text": "Daily foundational health and performance when it counts.",
+   "chips": [
+    {
+     "label": "Men's Complete Daily Multivitamin",
+     "href": "/products/complete-multivitamin"
+    },
+    {
+     "label": "Men's Vitality & Libido Tablets",
+     "href": "/products/mens-vitality-plus-tablets"
+    }
+   ],
+   "image": "/images/site/daily-support-1a3407.jpg"
+  }
+ ],
+ "cta": {
+  "heading": "Premium men's supplements without the premium markup.",
+  "text": "Built for men who care what goes in their bodies, using quality ingredients and straightforward formulas at honest, everyday prices.",
+  "sub": "Less money on supplements. More money for your actual goals.",
+  "cta": "Shop all"
+ },
+ "blog_heading": "See how we compare",
+ "nav": [
+  {
+   "label": "Home",
+   "href": "/"
+  },
+  {
+   "label": "All Supplements",
+   "href": "/collections/all"
+  },
+  {
+   "label": "Comparisons",
+   "href": "/blogs/mens-health"
+  },
+  {
+   "label": "About Us",
+   "href": "/pages/about-us"
+  },
+  {
+   "label": "Contact",
+   "href": "/pages/contact"
+  }
+ ],
+ "footer": {
+  "newsletter": "Get notified of pricing changes, new supplements, and important updates. We don't spam, because we don't pay for a spammy automated email system, which means YOU don't pay any more than you have to for your supplements.",
+  "logo": "/images/site/logo-17cee9.svg"
+ },
+ "header_svg_count": 14
+}

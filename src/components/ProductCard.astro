@@ -1,0 +1,8 @@
+---
+import { money } from '../lib/data';
+const { p } = Astro.props;
+---
+<a class="card" href={`/products/${p.handle}`}>
+  <img class="card__img" src={p.images[0]?.src} alt={p.images[0]?.alt || p.title} loading="lazy" width="600" height="600">
+  <div class="card__body"><p class="card__title">{p.title}</p><p class="card__meta">{p.compare && Number(p.compare) > Number(p.price) ? <><s>{money(p.compare)}</s> </> : null}{money(p.price)}</p></div>
+</a>
