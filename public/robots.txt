@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://guysgoals.com/sitemap-index.xml
